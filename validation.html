@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULARIO SESION 2</title>
+    <style>
+      input,
+      select {
+        padding: 10px;
+      }
+      input,
+      select :valid :required {
+        border-color: green;
+      }
+      input,
+      select :invalid :required {
+        border-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FORMULARIO</h1>
+    <form>
+      <!--Nombres-->
+      <label for="name">Nombres</label>
+      <br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        minlength="5"
+        maxlength="12"
+        placeholder="Ingresa tus nombres"
+      />
+      <br />
+      <br />
+      <!--Apellidos-->
+      <label for="lastname">Apellidos</label>
+      <br />
+      <input
+        type="text"
+        id="lastname"
+        name="lastname"
+        required
+        minlength="5"
+        maxlength="20"
+        placeholder="Ingresa tus apellidos"
+      />
+      <br />
+      <br />
+      <!--Edad-->
+      <label for="age">Edad</label>
+      <br />
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="18"
+        max="99"
+        required
+        placeholder="Ingresa tu edad"
+      />
+      <br />
+      <br />
+      <!--Correo electrónico-->
+      <label for="email">Correo electrónico</label>
+      <br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Ingresa tu correo eletrónico"
+      />
+      <br />
+      <br />
+      <!--Sexo-->
+      <label for="gender">Sexo</label>
+      <br />
+      <select name="gender" id="gender" required>
+        <option value="" selected disabled>Selecciona tu sexo</option>
+        <option value="male">Hombre</option>
+        <option value="female">Mujer</option>
+      </select>
+      <br />
+      <br />
+      <!--Hobbies-->
+      <label for="hobbies">Hobbies</label>
+      <br />
+      <div>
+        <input type="radio" id="hobby" name="sports" />
+        <label for="sports">Hacer deportes</label> <br />
+        <input type="radio" id="hobby" name="movies" />
+        <label for="movies">Ver películas</label> <br />
+        <input type="radio" id="hobby" name="shopping" />
+        <label for="shopping">Hacer compras</label><br />
+        <input type="radio" id="hobby" name="music" />
+        <label for="music">Escuchar musica</label><br />
+        <input type="radio" id="hobby" name="walking" />
+        <label for="walking">Ir de paseo</label><br />
+      </div>
+      <br />
+      <!--País-->
+      <label for="country">País</label>
+      <br />
+      <select name="country" id="country" required>
+        <option value="" selected disabled>Selecciona tu país</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Chile">Chile</option>
+        <option value="Perú">Perú</option>
+      </select>
+      <br />
+      <br />
+      <!--Ciudad-->
+      <label for="city">Ciudad</label>
+      <br />
+      <select name="city" id="city" required>
+        <option value="" selected disabled>Selecciona tu ciudad</option>
+        <option value="lima">Lima</option>
+        <option value="arequipa">Arequipa</option>
+        <option value="pucallpa">Pucallpa</option>
+        <option value="chiclayo">Chiclayo</option>
+        <option value="jauja">Jauja</option>
+        <option value="ayacucho">Ayacucho</option>
+      </select>
+      <br />
+      <br />
+      <!--Distrito-->
+      <label for="district">Distrito</label>
+      <br />
+      <select name="district" id="district" required>
+        <option value="" selected disabled>Selecciona tu distrito</option>
+        <option value="Ate">Ate</option>
+        <option value="Breña">Breña</option>
+        <option value="Comas">Comas</option>
+        <option value="Independencia">Independencia</option>
+        <option value="Los Olivos">Los Olivos</option>
+        <option value="Puente Piedra">Puente Piedra</option>
+        <option value="San Borja">San Borja</option>
+      </select>
+      <br />
+      <br />
+      <!--Comentarios-->
+      <label for="comments">Comentarios</label>
+      <br />
+      <textarea
+        name="comments"
+        id="comments"
+        cols="30"
+        rows="10"
+        required
+        placeholder="Comentanostu experiencia"
+      ></textarea>
+      <br />
+      <br />
+      <button>Enviar</button>
+      <button type="reset">Limpiar</button>
+    </form>
+  </body>
+</html>
