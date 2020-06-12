@@ -1,54 +1,71 @@
-<h1>Completa el siguiente formulario</h1>
-<form>
-  Nombres <br />
-  <input required type="text" name="name" id="name" /><br />
-  Apellidos <br />
-  <input required type="text" name="lastname" id="lastname" /><br />
-  Edad <br />
-  <input required type="number" name="age" id="age" /><br />
-  Fecha de Nacimiento <br>
-  <input required type="date" name="dateofbirth" id="dateofbirth" /> <br>
-  Nacionalidad <br />
-  <select required name="country" id="country">
-    <option value="Selecciona tu país">Selecciona tu país</option>
-    <option value="Argentina">Argentina</option>
-    <option value="Bolivia">Bolivia</option>
-    <option value="Brasil">Brasil</option>
-    <option value="Colombia">Colombia</option>
-    <option value="Chile">Chile</option>
-    <option value="Perú">Perú</option>
-  </select><br>
-  Distrito <br>
-  <select required name="district" id="district" required>
-    <option value="Selecciona tu distrito">Selecciona tu distrito</option>
-    <option value="Ate">Ate</option>
-    <option value="Breña">Breña</option>
-    <option value="Comas">Comas</option>
-    <option value="Independencia">Independencia</option>
-    <option value="Los Olivos">Los Olivos</option>
-    <option value="Puente Piedra">Puente Piedra</option>
-    <option value="San Borja">San Borja</option>
-  </select><br>
-  Sexo <br>
-  <input type="radio" id="male" name="gender" value="male" /> Hombre <br />
-  <input type="radio" id="female" name="gender" value="female" /> Mujer <br />
-  Celular <br>
-  <input required type="tel" name="phonenumber" id="phonenumber" /><br>
-  Correo <br>
-  <input required type="email" name="email" id="email" /><br>
-  Artista Favorito <br>
-  <select required name="favartist" id="favartist">
-    <option value="Selecciona tu artista favorito">Selecciona tu artista favorito</option>
-    <option value="Ozuna">Ozuna</option>
-    <option value="J Balvin">J Balvin</option>
-    <option value="Bad Bunny">Bad Bunny</option>
-    <option value="Daddy Yankee">Daddy Yankee</option>
-  </select><br>
-  ¿Tienes mascotas?<br>
-    <input type="radio" id="Yes" name="haveanypets" value="yes"> Si <br>
-    <input type="radio" id="No" name="haveanypets" value="No"> No <br>
-  Comentarios <br>
-    <textarea name="comments" id="comments" cols="30" rows="10"></textarea> <br>
-  <br><input type="submit" name="submit" id="submit">
-  <input type="reset" name="reset" id="reset">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Completa el siguiente formulario</h1>
+    <form>
+      Nombres <br />
+      <input required type="text" name="name" id="name" /><br />
+      Apellidos <br />
+      <input required type="text" name="lastname" id="lastname" /><br />
+      Edad <br />
+      <input required type="number" name="age" id="age" /><br />
+      Fecha de Nacimiento <br />
+      <input required type="date" name="dateofbirth" id="dateofbirth" /> <br />
+      Nacionalidad <br />
+      <select required name="country" id="country">
+        <option value="Selecciona tu país">Selecciona tu país</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Chile">Chile</option>
+        <option value="Perú">Perú</option> 
+      </select>
+      ><br />
+      Distrito <br />
+      <select required name="district" id="district" required>
+        <option value="Selecciona tu distrito">Selecciona tu distrito</option>
+        <option value="Ate">Ate</option>
+        <option value="Breña">Breña</option>
+        <option value="Comas">Comas</option>
+        <option value="Independencia">Independencia</option>
+        <option value="Los Olivos">Los Olivos</option>
+        <option value="Puente Piedra">Puente Piedra</option>
+        <option value="San Borja">San Borja</option>
+      </select>
+      ><br />
+      Sexo <br />
+      <input type="radio" id="male" name="gender" value="male" /> Hombre <br />
+      <input type="radio" id="female" name="gender" value="female" /> Mujer
+      <br />
+      Celular <br />
+      <input required type="tel" name="phonenumber" id="phonenumber" /><br />
+      Correo <br />
+      <input required type="email" name="email" id="email" /><br />
+      Artista Favorito <br />
+      <select required name="favartist" id="favartist">
+        <option value="Selecciona tu artista favorito"
+          >Selecciona tu artista favorito</option
+        >
+        <option value="Ozuna">Ozuna</option>
+        <option value="J Balvin">J Balvin</option>
+        <option value="Bad Bunny">Bad Bunny</option>
+        <option value="Daddy Yankee">Daddy Yankee</option> 
+      </select>
+      ><br />
+      ¿Tienes mascotas?<br />
+      <input type="radio" id="Yes" name="haveanypets" value="yes" /> Si <br />
+      <input type="radio" id="No" name="haveanypets" value="No" /> No <br />
+      Comentarios <br />
+      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      <br />
+      <br /><input type="submit" name="submit" id="submit" />
+      <input type="reset" name="reset" id="reset" />
+    </form>
+  </body>
+</html>
